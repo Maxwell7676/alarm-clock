@@ -1,0 +1,152 @@
+.enter-time{
+  margin-right: 40px;
+}
+
+  
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+  .container{
+    z-index: .5;
+  }
+
+
+  .main {
+  background-image: url("alarm.jpg");
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+  background-blend-mode: overlay;
+  opacity: 0.7;
+}
+
+
+nav.navbar{
+   position: sticky; /* Safari */
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 1;
+  height: 12vh;
+  width: 100vw;
+  font-family: Palatino, serif;
+  color: floralwhite;
+
+}
+
+nav.navbar marquee{
+    top: 0;
+   font-size: 2.5rem;
+}
+
+
+.card-header{
+  background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
+}
+
+
+.card-body{
+   background-image: linear-gradient( 135deg, #FF96F9 10%, #C32BAC 100%);
+}
+
+.card-footer{
+  background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
+}
+
+li {
+   background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-top: 1%;
+   height: 5%;
+}
+
+li span{
+  color: darkblue;
+  font-family: Franklin Gothic Medium;
+  font-size: 1.2rem;
+}
+
+
+.select {
+        position: relative;
+        display: block;
+        width: 12%;
+        height: 8%;
+        line-height: 3;
+        background: #2C3E50;
+        overflow: hidden;
+        border-radius: .25em;
+        color: floralwhite;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+.btn{
+
+  margin-top: 2%;
+  width: 23%;
+  
+ 
+
+}
+
+
+#set-alarm{
+
+background-image: linear-gradient(#10b86a, #14b725);
+
+ font-family: Franklin Gothic Medium;
+ font-size: 1.1rem;
+
+}
+
+
+#set-alarm:hover{
+background-image: linear-gradient(#0fe984, var(--bs-gray));
+}
+
+
+
+#stop-alarm{
+
+background-image: linear-gradient(#d32435, #d11527);
+font-family: Franklin Gothic Medium;
+font-size: 1.1rem;
+
+
+}
+
+#stop-alarm:hover{
+
+  background-image: linear-gradient(#d0235f, #b78489);
+  
+}
+
+
+#Time{
+  font-family: Optima;
+  font-size: 3rem;
+}
+
+
+  
+.select::-webkit-scrollbar {
+    display: none;
+
+}  
